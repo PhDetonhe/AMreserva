@@ -1,0 +1,80 @@
+# Ambientes virtuais Python
+.venv*/
+venv/
+env/
+ENV/
+.tox/
+.nox/
+
+# Bytecode e caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.ipynb_checkpoints/
+
+# Arquivos de testes e seus resultados
+tests/
+test/
+test_*.py
+*_test.py
+*.test.*
+*.spec.*
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+coverage/
+.junit.xml
+junit.xml
+.pytest-tmp/
+
+# Configurações locais e segredos
+.codex/
+.aws/
+.agents/
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local.json
+
+# Estado local da estação e contagens geradas
+/backend/data/
+/backend/station/station.json
+
+# Saídas de detecção, capturas e dados locais PostgreSQL
+/runs/
+/captures/
+/recordings/
+/postgres-data/
+/pgdata/
+/.pgdata/
+/backups/
+*.dump
+*.sql.gz
+
+# Dependências e artefatos de build
+node_modules/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Configurações de editor e arquivos do sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

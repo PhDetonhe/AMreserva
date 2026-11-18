@@ -1,0 +1,7 @@
+# Dependências exclusivas da estação YOLOv8/TACO/ONNX.
+# Não requer Torch/Ultralytics nem substitui o ambiente dos outros detectores.
+# python -m pip install -r requirements-yolov8-taco.txt
+numpy==2.2.6
+opencv-python==4.12.0.88
+onnxruntime==1.23.2
+requests>=2.31.0

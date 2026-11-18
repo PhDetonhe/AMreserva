@@ -1,0 +1,99 @@
+{
+  "station_id": 1,
+  "station_document": {
+    "path": "backend/data/yolov8_taco/station.json",
+    "detections": 0,
+    "status": "offline",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -46.4526,
+        -23.5015
+      ]
+    },
+    "administrative": {
+      "country": "Brazil",
+      "state": "São Paulo",
+      "city": "Santos",
+      "district": "Baía de Santos"
+    }
+  },
+  "backend": {
+    "base_url": "http://127.0.0.1:8000",
+    "detections_path": "/api/detections",
+    "timeout_seconds": 5,
+    "require_connection_on_startup": true
+  },
+  "camera": {
+    "device_index": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 15
+  },
+  "detection_interval_ms": 100,
+  "tracking": {
+    "max_distance": 90,
+    "max_missing_frames": 12
+  },
+  "display": {
+    "enabled": false
+  },
+  "image_processing": {
+    "enabled": true,
+    "max_width": 640,
+    "max_height": 480
+  },
+  "counts_path": "backend/data/yolov8_taco/counts.json",
+  "yolov8_taco": {
+    "model_path": "backend/detection/models/yolov8_taco/yolov8s_taco.onnx",
+    "metadata_path": "backend/detection/models/yolov8_taco/metadata.json",
+    "confidence_threshold": 0.3,
+    "nms_threshold": 0.45,
+    "detection_types": [
+      "can",
+      "bottle",
+      "paper",
+      "plastic",
+      "carton"
+    ],
+    "class_mapping": {
+      "Food Can": "can",
+      "Aerosol": "can",
+      "Drink can": "can",
+      "Other plastic bottle": "bottle",
+      "Clear plastic bottle": "bottle",
+      "Glass bottle": "bottle",
+      "Paper cup": "paper",
+      "Magazine paper": "paper",
+      "Tissues": "paper",
+      "Wrapping paper": "paper",
+      "Normal paper": "paper",
+      "Paper bag": "paper",
+      "Plastified paper bag": "paper",
+      "Paper straw": "paper",
+      "Plastic bottle cap": "plastic",
+      "Disposable plastic cup": "plastic",
+      "Foam cup": "plastic",
+      "Plastic lid": "plastic",
+      "Plastic film": "plastic",
+      "Six pack rings": "plastic",
+      "Garbage bag": "plastic",
+      "Other plastic wrapper": "plastic",
+      "Single-use carrier bag": "plastic",
+      "Polypropylene bag": "plastic",
+      "Crisp packet": "plastic",
+      "Disposable food container": "plastic",
+      "Foam food container": "plastic",
+      "Other plastic container": "plastic",
+      "Plastic straw": "plastic",
+      "Styrofoam piece": "plastic",
+      "Toilet tube": "carton",
+      "Other carton": "carton",
+      "Egg carton": "carton",
+      "Drink carton": "carton",
+      "Corrugated carton": "carton",
+      "Meal carton": "carton",
+      "Pizza box": "carton"
+    }
+  }
+}
